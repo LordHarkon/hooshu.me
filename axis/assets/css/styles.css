@@ -51,7 +51,7 @@ a {
 }
 
 .form_image {
-    background: url("./assets/imgs/form.png") no-repeat;
+    background: url(http://hooshu.me/axis/assets/imgs/form.png) no-repeat;
     background-size: 100%;
     width: 496px;
     height: 702px;
