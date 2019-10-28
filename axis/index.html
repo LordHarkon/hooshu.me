@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Axis Cult Signup Form Generator</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div id="page_body">
+        <div class="form_style">
+            <div class="form_body_style">
+                <div class="form_image">
+                    <input type="text" class="form_name" maxlength="27">
+                    <input type="text" class="form_gender" maxlength="16">
+                    <input type="text" class="form_age" maxlength="16">
+                    <input type="text" class="form_contact" maxlength="32">
+                    <input type="text" class="form_profession" maxlength="32">
+                    <input type="text" class="form_recruited" maxlength="32">
+                    <div id="form_signature">
+                        
+                    </div>
+                </div>
+                <button class="form_generate_button" id="generate"><center>Generate Form</center></button>
+                <button class="form_generate_button" id="reset"><center>Reset</center></button>
+            </div>
+            <div class="form_body_style" id="result" hidden=true></div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/drawingboard.js/0.4.6/drawingboard.min.js'></script>
+    <script>
+        localStorage.removeItem('drawing-board-form_signature');
+
+        var signature = new DrawingBoard.Board('form_signature', {
+            // controls: [
+            //     { DrawingMode: { pencil: true, filler: false, eraser: true } }
+            // ],
+            controls: false,
+            background: "#EBCC9D",
+            size: 2,
+            enlargeYourContainer: true,
+            webStorage: "local"
+        });
+
+        var cultistName = document.querySelector('.form_name');
+        var cultistGender = document.querySelector('.form_gender');
+        var cultistAge = document.querySelector('.form_age');
+        var cultistContact = document.querySelector('.form_contact').value
+        var cultistProfession = document.querySelector('.form_profession');
+        var cultistRecruited = document.querySelector('.form_recruited');
+
+        var generateBtn = document.querySelector('#generate');
+
+        generateBtn.addEventListener('click', () => {
+            html2canvas(document.querySelector('.form_image')).then(c => {
+                let r = document.querySelector('#result');
+                r.append(c);
+                r.setAttribute('hidden', false);
+            });
+        });
+
+        document.querySelector('#reset').addEventListener('click', () => {
+            cultistName.value = '';
+            cultistGender.value = '';
+            cultistAge.value = '';
+            cultistContact.value = '';
+            cultistProfession.value = '';
+            cultistRecruited.value = '';
+            localStorage.removeItem('drawing-board-form_signature');
+            location.reload();
+        })
+    </script>
+</body>
+</html>
