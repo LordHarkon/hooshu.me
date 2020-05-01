@@ -9,9 +9,9 @@
     <script>
         window.addEventListener('scroll', function (e) {
             try {
-                var scroll = window.scrollY;
-                var height = document.body.scrollHeight - window.innerHeight + 10;
-                var percent = Math.round(100.0 * scroll / height);
+                let scroll = window.scrollY;
+                let height = document.body.scrollHeight - window.innerHeight + 10;
+                let percent = Math.round(100.0 * scroll / height);
                 document.getElementById('readpos').innerText = percent + '%';
             } catch (err) {
                 // ignore
@@ -22,16 +22,30 @@
 
 <body>
     <div id="content">
+        <h1>Endless Path : Infinite Cosmos</h1>
+        <img src="./assets/cover-epic.jpg" alt="Endless Path : Infinite Cosmos" class="cover">
+        <br>
+        <div class="synopsis">
+            <u><h3>Synopsis</h3></u>
+            <p>Vahn was an atypical youth. Due to a rare mutation, his blood had the potential to target and attack ailments within the human body. Touted as a universal cure, people had elevated his status above the norm and given him the classification "Panacea". In the media, he was hailed as a great hero who would usher in a new era or human wellness. However, behind the scenes things weren't so bright. Being a unique individual, Vahn spent his entire youth locked up in a lab with various scientists and research teams using his body and blood to perform endless amounts of experiments. The only solace in his suffering was the various anime and manga made available to him between experiments. He often imagined himself as the protagonist in a world of his own, finally in control of his own destiny. For years he nurtured this desire, until at the age of 14 he died when an organization had tried to kidnap him from the lab...</p><br>
+            <p>"Finally, I don't have to suffer anymore..."</p><br>
+            <p>This was Vahn's last thought as he faded into the endless black abyss...</p><br>
+            <p>"You poor soul."</p><br>
+            <p>Cover by Sinlaire, Edited by Frozen: https://www.deviantart.com/sinlaire</p><br>
+            <p>https://discord.gg/Jwa8PKh</p><br>
+            <p>New Patreon~! https://www.patreon.com/user?u=14397149</p><br>
+            <p>This is a work of fiction that draws heavily upon the original source material of Danmachi. Please support the official release and know I claim no ownership or credit regarding the existence of pre-existing characters or content.</p><br>
+        </div>
         <h1>Table of contents</h1>
         <main>
-            <h3>Info</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Info</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00001.html">Characters (Updated for Vol. 15)</a></li>
                 <li><a class="btn-chapter" href="00002.html">Rage : The Path (Parody Chapter)</a></li>
                 <li><a class="btn-chapter" href="00003.html">Clarification of Mechanics</a></li>
             </ul>
-            <h3>Volume 1</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 1</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00004.html">Chapter 1: The Beginning of the End. Part 1/2</a></li>
                 <li><a class="btn-chapter" href="00005.html">Chapter 2: The Beginning of the End. Part 2/2</a></li>
                 <li><a class="btn-chapter" href="00006.html">Chapter 3: Meeting the Goddess Klyscha</a></li>
@@ -49,8 +63,8 @@
                 <li><a class="btn-chapter" href="00018.html">Chapter 15: *Spoiler : Title at End*</a></li>
                 <li><a class="btn-chapter" href="00019.html">Chapter 16: Rewards</a></li>
             </ul>
-            <h3>Volume 2</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 2</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00020.html">Chapter 17: Entering the City</a></li>
                 <li><a class="btn-chapter" href="00021.html">Chapter 18: The Guild</a></li>
                 <li><a class="btn-chapter" href="00022.html">Chapter 19: The Hearths Embrace</a></li>
@@ -69,8 +83,8 @@
                 <li><a class="btn-chapter" href="00035.html">Chapter 32: Growth : Disciple</a></li>
                 <li><a class="btn-chapter" href="00036.html">Chapter 33: Liliruca Arde / Past : Future</a></li>
             </ul>
-            <h3>Volume 3</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 3</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00037.html">Chapter 34: Hephaestus Familia (1/2)</a></li>
                 <li><a class="btn-chapter" href="00038.html">Chapter 35: Hephaestus Familia (2/2)</a></li>
                 <li><a class="btn-chapter" href="00039.html">Chapter 36: Decision; Hephaestus\' Surprise</a></li>
@@ -92,8 +106,8 @@
                 <li><a class="btn-chapter" href="00055.html">Chapter 52: Embrace</a></li>
                 <li><a class="btn-chapter" href="00056.html">Chapter 53: Cyclops : Harsh Lesson</a></li>
             </ul>
-            <h3>Volume 4</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 4</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00057.html">Chapter 54: Self-Awareness</a></li>
                 <li><a class="btn-chapter" href="00058.html">Chapter 55: 2 - 99</a></li>
                 <li><a class="btn-chapter" href="00059.html">Chapter 56: *Spoiler: Title at End*</a></li>
@@ -115,8 +129,8 @@
                 <li><a class="btn-chapter" href="00075.html">Chapter 72: Loki Familia Appears</a></li>
                 <li><a class="btn-chapter" href="00076.html">Chapter 73: Realization</a></li>
             </ul>
-            <h3>Volume 5</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 5</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00077.html">Chapter 74: Preparations : Promise</a></li>
                 <li><a class="btn-chapter" href="00078.html">Chapter 75: Unstoppable Momentum</a></li>
                 <li><a class="btn-chapter" href="00079.html">Chapter 76: Tyrannical Might</a></li>
@@ -152,8 +166,8 @@
                 <li><a class="btn-chapter" href="00109.html">Chapter 106: *Spoilers: Title at End*</a></li>
                 <li><a class="btn-chapter" href="00110.html">Chapter 107: Hephaestus\'s POV</a></li>
             </ul>
-            <h3>Volume 6</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 6</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00111.html">Chapter 108: Changes</a></li>
                 <li><a class="btn-chapter" href="00112.html">Chapter 109: Lamentation</a></li>
                 <li><a class="btn-chapter" href="00113.html">Chapter 110: Ceremony</a></li>
@@ -217,8 +231,8 @@
                 <li><a class="btn-chapter" href="00171.html">Chapter 168: Behavior Shift</a></li>
                 <li><a class="btn-chapter" href="00172.html">Chapter 169: Empathy</a></li>
             </ul>
-            <h3>Volume 7</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 7</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00173.html">Chapter 170: Changes at Home</a></li>
                 <li><a class="btn-chapter" href="00174.html">Chapter 171: Routine</a></li>
                 <li><a class="btn-chapter" href="00175.html">Chapter 172: Reunion with Chloe</a></li>
@@ -268,8 +282,8 @@
                 <li><a class="btn-chapter" href="00219.html">Chapter 216: Familia</a></li>
                 <li><a class="btn-chapter" href="00220.html">Chapter 217: Home</a></li>
             </ul>
-            <h3>Volume 8</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 8</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00221.html">Chapter 218: Furnishings</a></li>
                 <li><a class="btn-chapter" href="00222.html">Chapter 219: Reason</a></li>
                 <li><a class="btn-chapter" href="00223.html">Chapter 220: Comfort</a></li>
@@ -321,8 +335,8 @@
                 <li><a class="btn-chapter" href="00269.html">Chapter 266: Observation</a></li>
                 <li><a class="btn-chapter" href="00270.html">Chapter 267: Strain</a></li>
             </ul>
-            <h3>Volume 9</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 9</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00271.html">Chapter 268: Network</a></li>
                 <li><a class="btn-chapter" href="00272.html">Chapter 269: Expedition</a></li>
                 <li><a class="btn-chapter" href="00273.html">Chapter 270: Relax...</a></li>
@@ -405,8 +419,8 @@
                 <li><a class="btn-chapter" href="00350.html">Chapter 347: Hostess of Fertility(5/5)</a></li>
                 <li><a class="btn-chapter" href="00351.html">Chapter 348: Day Before The Denatus</a></li>
             </ul>
-            <h3>Volume 10</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 10</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00352.html">Chapter 349: Blossom</a></li>
                 <li><a class="btn-chapter" href="00353.html">Chapter 350: Denatus Begins</a></li>
                 <li><a class="btn-chapter" href="00354.html">Chapter 351: Taking a Stand</a></li>
@@ -457,8 +471,8 @@
                 <li><a class="btn-chapter" href="00399.html">Chapter 396: Taking Control</a></li>
                 <li><a class="btn-chapter" href="00400.html">Chapter 397: Lady in Black</a></li>
             </ul>
-            <h3>Volume 11</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 11</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00401.html">Chapter 398: Capabilities</a></li>
                 <li><a class="btn-chapter" href="00402.html">Chapter 399: Large Tree Labyrinth</a></li>
                 <li><a class="btn-chapter" href="00403.html">Chapter 400: Fools</a></li>
@@ -510,8 +524,8 @@
                 <li><a class="btn-chapter" href="00449.html">Chapter 446: New Year\'s Resolutions (2/3)</a></li>
                 <li><a class="btn-chapter" href="00450.html">Chapter 447: New Year\'s Resolutions (3/3)</a></li>
             </ul>
-            <h3>Volume 12</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 12</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00451.html">Chapter 448: Research</a></li>
                 <li><a class="btn-chapter" href="00452.html">Chapter 449: Unique</a></li>
                 <li><a class="btn-chapter" href="00453.html">Chapter 450: Confronting Freya</a></li>
@@ -570,8 +584,8 @@
                 <li><a class="btn-chapter" href="00506.html">Chapter 503: Loose Ends (2/3)</a></li>
                 <li><a class="btn-chapter" href="00507.html">Chapter 504: Loose Ends (3/3)</a></li>
             </ul>
-            <h3>Volume 13</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 13</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00508.html">Chapter 505: Sanjouno Haruhime (1/2)</a></li>
                 <li><a class="btn-chapter" href="00509.html">Chapter 506: Sanjouno Haruhime (2/2)</a></li>
                 <li><a class="btn-chapter" href="00510.html">Chapter 507: Transition toward the Future</a></li>
@@ -631,8 +645,8 @@
                 <li><a class="btn-chapter" href="00564.html">Chapter 561: Lecture</a></li>
                 <li><a class="btn-chapter" href="00565.html">Chapter 562: Moving Forward</a></li>
             </ul>
-            <h3>Volume 14</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 14</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00566.html">Chapter 563: Business As Usual?</a></li>
                 <li><a class="btn-chapter" href="00567.html">Chapter 564: Intimacy</a></li>
                 <li><a class="btn-chapter" href="00568.html">Chapter 565: Signs of Spring</a></li>
@@ -741,8 +755,8 @@
                 <li><a class="btn-chapter" href="00671.html">Chapter 668: Intermission : Pactio (1/2)</a></li>
                 <li><a class="btn-chapter" href="00672.html">Chapter 669: Intermission : Pactio (2/2)</a></li>
             </ul>
-            <h3>Volume 15</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 15</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00673.html">Chapter 670: Intermission : Legend</a></li>
                 <li><a class="btn-chapter" href="00674.html">Chapter 671: Parental Instincts</a></li>
                 <li><a class="btn-chapter" href="00675.html">Chapter 672: Date!? : Return</a></li>
@@ -847,8 +861,8 @@
                 <li><a class="btn-chapter" href="00774.html">Chapter 771: Time Flies : Don\'t Blink</a></li>
                 <li><a class="btn-chapter" href="00775.html">Chapter 772: Ripples : Waves</a></li>
             </ul>
-            <h3>Volume 16</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 16</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00776.html">Chapter 773: Small Steps</a></li>
                 <li><a class="btn-chapter" href="00777.html">Chapter 774: Bestowment</a></li>
                 <li><a class="btn-chapter" href="00778.html">Chapter 775: Power</a></li>
@@ -944,8 +958,8 @@
                 <li><a class="btn-chapter" href="00868.html">Chapter 865: Inevitable</a></li>
                 <li><a class="btn-chapter" href="00869.html">Chapter 866: Defensive Measures</a></li>
             </ul>
-            <h3>Volume 17</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 17</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00870.html">Chapter 867: Before the Descent</a></li>
                 <li><a class="btn-chapter" href="00871.html">Chapter 868: Exploration : Explanation</a></li>
                 <li><a class="btn-chapter" href="00872.html">Chapter 869: Information : Weakness</a></li>
@@ -1039,8 +1053,8 @@
                 <li><a class="btn-chapter" href="00960.html">Chapter 957: Impact</a></li>
                 <li><a class="btn-chapter" href="00961.html">Chapter 958: Aftermath</a></li>
             </ul>
-            <h3>Volume 18</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 18</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="00962.html">Chapter 959: Laying The Foundation</a></li>
                 <li><a class="btn-chapter" href="00963.html">Chapter 960: Probe</a></li>
                 <li><a class="btn-chapter" href="00964.html">Chapter 961: Reflection</a></li>
@@ -1099,8 +1113,8 @@
                 <li><a class="btn-chapter" href="01017.html">Chapter 1014: Vow : Sadness</a></li>
                 <li><a class="btn-chapter" href="01018.html">Chapter 1015: Departure : Impact</a></li>
             </ul>
-            <h3>Volume 19</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 19</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="01019.html">Chapter 1016: Analysis</a></li>
                 <li><a class="btn-chapter" href="01020.html">Chapter 1017: Orientation</a></li>
                 <li><a class="btn-chapter" href="01021.html">Chapter 1018: Observation</a></li>
@@ -1195,8 +1209,8 @@
                 <li><a class="btn-chapter" href="01110.html">Chapter 1107: Astute, Amorous, Awakening, Attendant</a></li>
                 <li><a class="btn-chapter" href="01111.html">Chapter 1108: Foundation</a></li>
             </ul>
-            <h3>Volume 20</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 20</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="01112.html">Chapter 1109: Secrets</a></li>
                 <li><a class="btn-chapter" href="01113.html">Chapter 1110: Awareness</a></li>
                 <li><a class="btn-chapter" href="01114.html">Chapter 1111: Status</a></li>
@@ -1273,8 +1287,8 @@
                 <li><a class="btn-chapter" href="01185.html">Chapter 1182: Decisive</a></li>
                 <li><a class="btn-chapter" href="01186.html">Chapter 1183: Aftermath</a></li>
             </ul>
-            <h3>Volume 21</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 21</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="01187.html">Chapter 1184: Revelations</a></li>
                 <li><a class="btn-chapter" href="01188.html">Chapter 1185: Breaking Limits</a></li>
                 <li><a class="btn-chapter" href="01189.html">Chapter 1186: Attention</a></li>
@@ -1371,8 +1385,8 @@
                 <li><a class="btn-chapter" href="01280.html">Chapter 1277: Interlude: Magical Supremacy (2/2)</a></li>
                 <li><a class="btn-chapter" href="01281.html">Chapter 1278: Final Yearly Update</a></li>
             </ul>
-            <h3>Volume 22</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 22</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="01282.html">Chapter 1279: Shift : Trial : Relaxation</a></li>
                 <li><a class="btn-chapter" href="01283.html">Chapter 1280: Unobstructed</a></li>
                 <li><a class="btn-chapter" href="01284.html">Chapter 1281: Concessions</a></li>
@@ -1500,8 +1514,8 @@
                 <li><a class="btn-chapter" href="01406.html">Chapter 1403: Closure...</a></li>
                 <li><a class="btn-chapter" href="01407.html">Chapter 1404: Reluctant Resolution</a></li>
             </ul>
-            <h3>Volume 23</h3>
-            <ul>
+            <button class="collapsible"><span class="volume-name">Volume 23</span></button>
+            <ul class="content">
                 <li><a class="btn-chapter" href="01408.html">Chapter 1405: Preparation</a></li>
                 <li><a class="btn-chapter" href="01409.html">Chapter 1406: Flair</a></li>
                 <li><a class="btn-chapter" href="01410.html">Chapter 1407: Mingle</a></li>
@@ -1619,6 +1633,23 @@
         </main>
     </div>
     <div id="readpos">0%</div>
+
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
