@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table of Contents</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll', function (e) {
+            try {
+                var scroll = window.scrollY;
+                var height = document.body.scrollHeight - window.innerHeight + 10;
+                var percent = Math.round(100.0 * scroll / height);
+                document.getElementById('readpos').innerText = percent + '%';
+            } catch (err) {
+                // ignore
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Table of contents</h1>
+        <main>
+            <h3>Info</h3>
+            <ul>
+                <li><a class="btn-chapter" href="00001.html">Characters (Updated for Vol. 15)</a></li>
+                <li><a class="btn-chapter" href="00002.html">Rage : The Path (Parody Chapter)</a></li>
+                <li><a class="btn-chapter" href="00003.html">Clarification of Mechanics</a></li>
+            </ul>
+            <h3>Volume 1</h3>
+            <ul>
+                <li><a class="btn-chapter" href="00004.html">Chapter 1</a></li>
+                <li><a class="btn-chapter" href="00005.html">Chapter 2</a></li>
+                <li><a class="btn-chapter" href="00006.html">Chapter 3</a></li>
+                <li><a class="btn-chapter" href="00007.html">Chapter 4</a></li>
+                <li><a class="btn-chapter" href="00008.html">Chapter 5</a></li>
+                <li><a class="btn-chapter" href="00009.html">Chapter 6</a></li>
+                <li><a class="btn-chapter" href="00010.html">Chapter 7</a></li>
+                <li><a class="btn-chapter" href="00011.html">Chapter 8</a></li>
+                <li><a class="btn-chapter" href="00012.html">Chapter 9</a></li>
+                <li><a class="btn-chapter" href="00013.html">Chapter 10</a></li>
+                <li><a class="btn-chapter" href="00014.html">Chapter 11</a></li>
+                <li><a class="btn-chapter" href="00015.html">Chapter 12</a></li>
+                <li><a class="btn-chapter" href="00016.html">Chapter 13</a></li>
+                <li><a class="btn-chapter" href="00017.html">Chapter 14</a></li>
+                <li><a class="btn-chapter" href="00018.html">Chapter 15</a></li>
+                <li><a class="btn-chapter" href="00019.html">Chapter 16</a></li>
+            </ul>
+            <h3>Volume 2</h3>
+            <ul>
+                <li><a class="btn-chapter" href="00020.html">Chapter 17</a></li>
+                <li><a class="btn-chapter" href="00021.html">Chapter 18</a></li>
+                <li><a class="btn-chapter" href="00022.html">Chapter 19</a></li>
+                <li><a class="btn-chapter" href="00023.html">Chapter 20</a></li>
+                <li><a class="btn-chapter" href="00024.html">Chapter 21</a></li>
+                <li><a class="btn-chapter" href="00025.html">Chapter 22</a></li>
+                <li><a class="btn-chapter" href="00026.html">Chapter 23</a></li>
+                <li><a class="btn-chapter" href="00027.html">Chapter 24</a></li>
+                <li><a class="btn-chapter" href="00028.html">Chapter 25</a></li>
+                <li><a class="btn-chapter" href="00029.html">Chapter 26</a></li>
+                <li><a class="btn-chapter" href="00030.html">Chapter 27</a></li>
+                <li><a class="btn-chapter" href="00031.html">Chapter 28</a></li>
+                <li><a class="btn-chapter" href="00032.html">Chapter 29</a></li>
+                <li><a class="btn-chapter" href="00033.html">Chapter 30</a></li>
+                <li><a class="btn-chapter" href="00034.html">Chapter 31</a></li>
+                <li><a class="btn-chapter" href="00035.html">Chapter 32</a></li>
+                <li><a class="btn-chapter" href="00036.html">Chapter 33</a></li>
+            </ul>
+        </main>
+    </div>
+    <div id="readpos">0%</div>
+</body>
+
+</html>
