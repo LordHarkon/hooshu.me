@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #323235;color: #c0c2cc !important;">
+
+    <div class="container-fluid p-5">
+        <div class="row justify-content-center" id="all-the-cards">
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function addCard(number, place) {
+            place = place.charAt(0).toUpperCase() + place.slice(1);
+
+            let x = `<div class="card bg-dark border rounded border-light text-center m-2" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Part ${number}</h3>
+                            <p class="card-text">${place} part of the #memes-and-media backup page.</p>
+                            <a href="/EPIC Library - Lounge 🛋 - memes-and-media [501515170883829790] [part ${number}].html"
+                                class="btn btn-primary btn-sm"> Visit </a>
+                        </div>
+                    </div>\n`;
+
+            return x;
+        }
+
+        let container = document.getElementById('all-the-cards');
+        let places = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth',
+            'eleventh', 'twelfth',
+            'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth'
+        ];
+        for (let i = 0; i < 18; i++) {
+            container.innerHTML += addCard(i + 1, places[i]);
+        }
+    </script>
+</body>
+
+</html>
